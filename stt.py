@@ -3,7 +3,7 @@ import pyautogui
 
 def process_text(text):
     if "senden" in text.lower():
-        text.replace("senden","")
+        text.lower().replace("senden","")
         pyautogui.typewrite(text + " ")
         pyautogui.press("enter")
     else:
